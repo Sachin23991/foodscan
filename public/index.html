@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodScan - AI Meal Analyzer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-background">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+        <div class="floating-shape shape-4"></div>
+        <div class="floating-shape shape-5"></div>
+    </div>
+
+    <!-- Particle System -->
+    <div class="particle-container">
+        <div class="particle particle-1"></div>
+        <div class="particle particle-2"></div>
+        <div class="particle particle-3"></div>
+        <div class="particle particle-4"></div>
+        <div class="particle particle-5"></div>
+        <div class="particle particle-6"></div>
+    </div>
+
+    <div class="app-container">
+        <!-- Stunning Header with Logo -->
+        <header class="header">
+            <div class="header-glow"></div>
+            <div class="logo-container">
+                <div class="logo-circle">
+                    <div class="logo-inner">
+                        <i class="fas fa-utensils logo-icon"></i>
+                        <div class="logo-sparkles">
+                            <div class="sparkle sparkle-1"></div>
+                            <div class="sparkle sparkle-2"></div>
+                            <div class="sparkle sparkle-3"></div>
+                            <div class="sparkle sparkle-4"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-text">
+                    <h1 class="app-title">
+                        <span class="letter f">F</span>
+                        <span class="letter o">o</span>
+                        <span class="letter o2">o</span>
+                        <span class="letter d">d</span>
+                        <span class="letter s">S</span>
+                        <span class="letter c">c</span>
+                        <span class="letter a">a</span>
+                        <span class="letter n">n</span>
+                    </h1>
+                    <p class="tagline">AI-Powered Meal Analysis</p>
+                </div>
+            </div>
+            <div class="header-waves">
+                <div class="wave wave-1"></div>
+                <div class="wave wave-2"></div>
+                <div class="wave wave-3"></div>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Upload Section with Amazing Animations -->
+            <div class="upload-section" id="uploadSection">
+                <div class="upload-container">
+                    <div class="magnetic-field">
+                        <div class="orbit-ring ring-1"></div>
+                        <div class="orbit-ring ring-2"></div>
+                        <div class="orbit-ring ring-3"></div>
+                        <div class="upload-core">
+                            <div class="core-glow"></div>
+                            <div class="camera-housing">
+                                <i class="fas fa-camera camera-icon"></i>
+                                <div class="lens-flare"></div>
+                            </div>
+                            <div class="energy-pulses">
+                                <div class="pulse pulse-1"></div>
+                                <div class="pulse pulse-2"></div>
+                                <div class="pulse pulse-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="floating-elements">
+                        <div class="float-icon icon-1"><i class="fas fa-apple-alt"></i></div>
+                        <div class="float-icon icon-2"><i class="fas fa-carrot"></i></div>
+                        <div class="float-icon icon-3"><i class="fas fa-pizza-slice"></i></div>
+                        <div class="float-icon icon-4"><i class="fas fa-fish"></i></div>
+                    </div>
+                </div>
+                <div class="upload-text-container">
+                    <h2 class="upload-title">Tap to Capture Your Meal</h2>
+                    <p class="upload-subtitle">Get instant nutritional insights with AI</p>
+                    <div class="feature-badges">
+                        <span class="badge">🔥 Calories</span>
+                        <span class="badge">💪 Macros</span>
+                        <span class="badge">⚡ Instant</span>
+                    </div>
+                </div>
+                <input type="file" id="fileInput" accept="image/*" capture="camera" hidden>
+            </div>
+
+            <!-- Analysis Screen with Spectacular Effects -->
+            <div class="analysis-screen hidden" id="analysisScreen">
+                <div class="analysis-container">
+                    <div class="holographic-display">
+                        <div class="holo-grid"></div>
+                        <div class="scan-beam"></div>
+                        <div class="data-streams">
+                            <div class="stream stream-1"></div>
+                            <div class="stream stream-2"></div>
+                            <div class="stream stream-3"></div>
+                            <div class="stream stream-4"></div>
+                        </div>
+                        <div class="ai-brain">
+                            <div class="brain-core"></div>
+                            <div class="neural-network">
+                                <div class="neuron neuron-1"></div>
+                                <div class="neuron neuron-2"></div>
+                                <div class="neuron neuron-3"></div>
+                                <div class="neuron neuron-4"></div>
+                                <div class="neuron neuron-5"></div>
+                                <div class="connection con-1"></div>
+                                <div class="connection con-2"></div>
+                                <div class="connection con-3"></div>
+                                <div class="connection con-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="analysis-text-area">
+                        <h2 class="analysis-title">
+                            <span class="text-glitch">Analyzing</span> Your Meal...
+                        </h2>
+                        <div class="status-indicators">
+                            <div class="indicator active">🔍 Detecting Food Items</div>
+                            <div class="indicator">📊 Calculating Nutrition</div>
+                            <div class="indicator">🎯 Generating Health Score</div>
+                            <div class="indicator">💡 Creating Recommendations</div>
+                        </div>
+                        <div class="quantum-progress">
+                            <div class="progress-track">
+                                <div class="progress-fill"></div>
+                                <div class="progress-glow"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results Section with Mind-Blowing Visuals -->
+            <div class="results-section hidden" id="resultsSection">
+                <div class="results-hero">
+                    <div class="meal-showcase">
+                        <div class="image-frame">
+                            <img id="mealImage" src="" alt="Your meal" class="meal-image">
+                            <div class="image-overlay"></div>
+                            <div class="scan-lines"></div>
+                        </div>
+                        <div class="health-orb" id="healthScore">
+                            <div class="orb-core">
+                                <div class="score-display">
+                                    <i class="fas fa-heart score-icon"></i>
+                                    <span class="score-text">Healthy</span>
+                                </div>
+                            </div>
+                            <div class="orb-rings">
+                                <div class="ring ring-1"></div>
+                                <div class="ring ring-2"></div>
+                                <div class="ring ring-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nutrition Matrix -->
+                <div class="nutrition-matrix">
+                    <h3 class="matrix-title">Nutritional Matrix</h3>
+                    <div class="matrix-grid">
+                        <div class="nutrition-cell calories-cell">
+                            <div class="cell-glow"></div>
+                            <div class="cell-content">
+                                <div class="icon-wrapper">
+                                    <i class="fas fa-fire"></i>
+                                </div>
+                                <h4>Calories</h4>
+                                <div class="value-display">
+                                    <span class="value" id="calories">0</span>
+                                    <span class="unit">kcal</span>
+                                </div>
+                                <div class="progress-ring">
+                                    <svg class="ring-svg">
+                                        <circle cx="30" cy="30" r="25" class="ring-bg"></circle>
+                                        <circle cx="30" cy="30" r="25" class="ring-fill calories-ring"></circle>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="nutrition-cell protein-cell">
+                            <div class="cell-glow"></div>
+                            <div class="cell-content">
+                                <div class="icon-wrapper">
+                                    <i class="fas fa-dumbbell"></i>
+                                </div>
+                                <h4>Protein</h4>
+                                <div class="value-display">
+                                    <span class="value" id="protein">0</span>
+                                    <span class="unit">g</span>
+                                </div>
+                                <div class="progress-ring">
+                                    <svg class="ring-svg">
+                                        <circle cx="30" cy="30" r="25" class="ring-bg"></circle>
+                                        <circle cx="30" cy="30" r="25" class="ring-fill protein-ring"></circle>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="nutrition-cell carbs-cell">
+                            <div class="cell-glow"></div>
+                            <div class="cell-content">
+                                <div class="icon-wrapper">
+                                    <i class="fas fa-bread-slice"></i>
+                                </div>
+                                <h4>Carbs</h4>
+                                <div class="value-display">
+                                    <span class="value" id="carbs">0</span>
+                                    <span class="unit">g</span>
+                                </div>
+                                <div class="progress-ring">
+                                    <svg class="ring-svg">
+                                        <circle cx="30" cy="30" r="25" class="ring-bg"></circle>
+                                        <circle cx="30" cy="30" r="25" class="ring-fill carbs-ring"></circle>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="nutrition-cell fat-cell">
+                            <div class="cell-glow"></div>
+                            <div class="cell-content">
+                                <div class="icon-wrapper">
+                                    <i class="fas fa-tint"></i>
+                                </div>
+                                <h4>Fat</h4>
+                                <div class="value-display">
+                                    <span class="value" id="fat">0</span>
+                                    <span class="unit">g</span>
+                                </div>
+                                <div class="progress-ring">
+                                    <svg class="ring-svg">
+                                        <circle cx="30" cy="30" r="25" class="ring-bg"></circle>
+                                        <circle cx="30" cy="30" r="25" class="ring-fill fat-ring"></circle>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Health Alerts with Dramatic Effects -->
+                <div class="alerts-section" id="warningsSection">
+                    <h3 class="section-title">
+                        <i class="fas fa-exclamation-triangle warning-icon"></i>
+                        Health Alerts
+                    </h3>
+                    <div class="alerts-container" id="warningsList">
+                        <!-- Warnings populated by JS -->
+                    </div>
+                </div>
+
+                <!-- Smart Recommendations -->
+                <div class="recommendations-section">
+                    <h3 class="section-title">
+                        <i class="fas fa-lightbulb idea-icon"></i>
+                        Smart Recommendations
+                    </h3>
+                    <div class="recommendations-container" id="recommendationsList">
+                        <!-- Recommendations populated by JS -->
+                    </div>
+                </div>
+
+                <!-- Action Button with Epic Animation -->
+                <button class="action-button" onclick="resetApp()">
+                    <div class="button-bg"></div>
+                    <div class="button-content">
+                        <i class="fas fa-camera-retro"></i>
+                        <span>Scan Another Meal</span>
+                    </div>
+                    <div class="button-particles">
+                        <div class="btn-particle"></div>
+                        <div class="btn-particle"></div>
+                        <div class="btn-particle"></div>
+                    </div>
+                </button>
+            </div>
+        </main>
+
+        <!-- Floating Action Button -->
+        <div class="fab-container">
+            <button class="fab" id="fabButton">
+                <div class="fab-ripple"></div>
+                <i class="fas fa-plus"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
